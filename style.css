@@ -43,6 +43,7 @@ nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
+    z-index: 2000;
 }
 nav ul {
     list-style: none;
@@ -173,8 +174,11 @@ hr{
     font-family: 'Great Vibes', cursive;
     font-size: 25px;
 }
-.border{
+.border-logo{
     border-radius: 50px;
+}
+.border-item{
+  border-radius: 200px;
 }
 /* section info */
 
@@ -208,4 +212,32 @@ align-items: center;
 }
 .col-md-6{
     padding: 0; important!;
+}
+
+.item1{
+  height: 450px;
+  width: 450px;
+  border-style:solid;
+  border-width: 10px;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.content-text{
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+.item2{
+  height: 450px;
+  width: 450px;
+  border-style:solid;
+  border-color: red;
+  border-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
 }

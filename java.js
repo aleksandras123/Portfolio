@@ -5,12 +5,27 @@ $( document ).ready(function() {
     $('.menu-icon').on('click', function(){
         $('nav ul').toggleClass('opa');
     });
+    // change shape
     $('.form').mouseover(function(){
-            $('.form').addClass('border');
+            $('.form').addClass('border-logo');
         });
         $('.form').mouseout(function(){
-            $('.form').removeClass('border');
+            $('.form').removeClass('border-logo');
         });
+        // change shape
+      $('.skills').mouseover(function(){
+              $('.item1').addClass('border-item');
+          });
+          $('.skills').mouseout(function(){
+              $('.item1').removeClass('border-item');
+            });
+
+        $('.projects').mouseover(function(){
+                $('.item2').addClass('border-item');
+            });
+            $('.projects').mouseout(function(){
+                $('.item2').removeClass('border-item');
+              });
 });
 // Change top collor
 $(window).on('scroll', function(){
